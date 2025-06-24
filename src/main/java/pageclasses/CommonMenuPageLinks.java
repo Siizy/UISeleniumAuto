@@ -3,6 +3,7 @@ package pageclasses;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import utils.BaseUtils;
 import utils.ReportUtils;
 
 public class CommonMenuPageLinks extends BasePage{

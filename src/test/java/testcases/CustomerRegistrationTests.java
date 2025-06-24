@@ -8,6 +8,7 @@ import com.github.javafaker.Faker;
 import pageclasses.CommonMenuPageLinks;
 import pageclasses.CustomerRegistrationPage;
 import pageclasses.LoginPage;
+import utils.BaseUtils;
 import utils.ReportUtils;
 
 public class CustomerRegistrationTests extends BaseTest{
