@@ -25,7 +25,7 @@ public class HomePage {
 
 	public void clickingonpage2() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0, 800)");
+		js.executeScript("window.scrollBy(0, 850)");
 		wait.until(ExpectedConditions.elementToBeClickable(page2));
 		driver.findElement(page2).click();
 	}
