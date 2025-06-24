@@ -3,10 +3,8 @@ package testcases;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pageclasses.ContactPage;
 import utils.ReportUtils;
-
 
 public class ContactPageTest extends BaseTest {
 	

@@ -26,45 +26,36 @@ public class ContactPage {
 	By submitButton = By.xpath("/html/body/app-root/div/app-contact/div/div/div/form/div/div[2]/div[4]/input");
 	By successMessage = By.xpath("/html/body/app-root/div/app-contact/div/div/div/div");
 
-
-
 	public ContactPage(WebDriver driver) {
-	    this.driver = driver;
-	    this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    this.faker = new Faker();
+		this.driver = driver;
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		this.faker = new Faker();
 	}
-	
+
 	public void fillContactForm() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(firstName));
-        driver.findElement(firstName).sendKeys(faker.name().fullName());
-        driver.findElement(lastName).sendKeys(faker.name().lastName());
-        driver.findElement(email).sendKeys(faker.internet().emailAddress());
+		driver.findElement(firstName).sendKeys(faker.name().fullName());
+		driver.findElement(lastName).sendKeys(faker.name().lastName());
+		driver.findElement(email).sendKeys(faker.internet().emailAddress());
 
-        Select subjectSelect = new Select(driver.findElement(subject));
-        subjectSelect.selectByVisibleText("Payments"); 
+		Select subjectSelect = new Select(driver.findElement(subject));
+		subjectSelect.selectByVisibleText("Payments");
 
-        driver.findElement(messageField).sendKeys(faker.lorem().paragraph()); 
-        ReportUtils.getLog().info("Contact form filled with fake data.");
-        
-        
+		driver.findElement(messageField).sendKeys(faker.lorem().paragraph());
+		ReportUtils.getLog().info("Contact form filled with fake data.");
 	}
+
 	public void submitForm() {
-        wait.until(ExpectedConditions.elementToBeClickable(submitButton));
-        driver.findElement(submitButton).click();
-        ReportUtils.getLog().info("Contact form submitted.");
-        
+		wait.until(ExpectedConditions.elementToBeClickable(submitButton));
+		driver.findElement(submitButton).click();
+		ReportUtils.getLog().info("Contact form submitted.");
 	}
-	
+
 	public String getSuccessMessage() {
-		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(successMessage));
-        String validateMsg = driver.findElement(successMessage).getText();
-        ReportUtils.getLog().info("Success message displayed: " + validateMsg);
-        return validateMsg;
-		
-		
+		String validateMsg = driver.findElement(successMessage).getText();
+		ReportUtils.getLog().info("Success message displayed: " + validateMsg);
+		return validateMsg;
 	}
-	
+
 }
-
-
