@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-24T16:15:29 EDT" name="Default suite" finished-at="2025-06-24T16:15:53 EDT" duration-ms="23583">
+    <groups>
+    </groups>
+    <test started-at="2025-06-24T16:15:29 EDT" name="Default test" finished-at="2025-06-24T16:15:53 EDT" duration-ms="23583">
+      <class name="testcases.CordlessDrillTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.CordlessDrillTest@747ddf94]" started-at="2025-06-24T16:15:29 EDT" name="init" finished-at="2025-06-24T16:15:29 EDT" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initBrowserDriver(java.lang.reflect.Method)[pri:0, instance:testcases.CordlessDrillTest@747ddf94]" started-at="2025-06-24T16:15:30 EDT" name="initBrowserDriver" finished-at="2025-06-24T16:15:50 EDT" duration-ms="20740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.CordlessDrillTest.cordlessDrillTests()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowserDriver -->
+        <test-method signature="cordlessDrillTests()[pri:0, instance:testcases.CordlessDrillTest@747ddf94]" started-at="2025-06-24T16:15:50 EDT" name="cordlessDrillTests" finished-at="2025-06-24T16:15:53 EDT" duration-ms="2706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cordlessDrillTests -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:testcases.CordlessDrillTest@747ddf94]" started-at="2025-06-24T16:15:53 EDT" name="endTest" finished-at="2025-06-24T16:15:53 EDT" duration-ms="103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cordlessDrillTests status=SUCCESS method=CordlessDrillTest.cordlessDrillTests()[pri:0, instance:testcases.CordlessDrillTest@747ddf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CordlessDrillTest@747ddf94]" started-at="2025-06-24T16:15:53 EDT" name="tearDown" finished-at="2025-06-24T16:15:54 EDT" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.CordlessDrillTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
