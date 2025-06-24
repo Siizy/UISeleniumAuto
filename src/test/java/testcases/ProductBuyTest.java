@@ -26,8 +26,6 @@ public class ProductBuyTest{
 		Assert.assertEquals(Cp.getProductAddedHeading(),"Product added to shopping cart.");
 		
 		driver.quit();
-		
 	}
-	
 
 }

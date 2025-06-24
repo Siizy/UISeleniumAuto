@@ -22,6 +22,5 @@ public class CombinationPlierPage {
 		return heading;
 		}
 	
-	
 	}
 

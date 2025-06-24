@@ -17,4 +17,5 @@ public class HomePage {
 		driver.findElement(selectCombinationPliers).click();
 	}
 
+	
 }
