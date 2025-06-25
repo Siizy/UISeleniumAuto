@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-24T22:39:10 PDT" name="Default suite" finished-at="2025-06-24T22:39:21 PDT" duration-ms="10417">
+    <groups>
+    </groups>
+    <test started-at="2025-06-24T22:39:10 PDT" name="Default test" finished-at="2025-06-24T22:39:21 PDT" duration-ms="10417">
+      <class name="testcases.AddToFavourites">
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.AddToFavourites@747ddf94]" started-at="2025-06-24T22:39:10 PDT" name="init" finished-at="2025-06-24T22:39:10 PDT" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="initBrowserDriver(java.lang.reflect.Method)[pri:0, instance:testcases.AddToFavourites@747ddf94]" started-at="2025-06-24T22:39:10 PDT" name="initBrowserDriver" finished-at="2025-06-24T22:39:18 PDT" duration-ms="8049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.AddToFavourites.selectItem()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowserDriver -->
+        <test-method signature="selectItem()[pri:0, instance:testcases.AddToFavourites@747ddf94]" started-at="2025-06-24T22:39:18 PDT" name="selectItem" finished-at="2025-06-24T22:39:21 PDT" duration-ms="2211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectItem -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:testcases.AddToFavourites@747ddf94]" started-at="2025-06-24T22:39:21 PDT" name="endTest" finished-at="2025-06-24T22:39:21 PDT" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectItem status=SUCCESS method=AddToFavourites.selectItem()[pri:0, instance:testcases.AddToFavourites@747ddf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AddToFavourites@747ddf94]" started-at="2025-06-24T22:39:21 PDT" name="tearDown" finished-at="2025-06-24T22:39:21 PDT" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AddToFavourites -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
