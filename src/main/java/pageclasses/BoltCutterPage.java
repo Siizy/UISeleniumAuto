@@ -6,31 +6,30 @@ import org.openqa.selenium.WebDriver;
 import utils.ReportUtils;
 
 public class BoltCutterPage {
-WebDriver driver;
-	
+	WebDriver driver;
+
 	public BoltCutterPage(WebDriver driver) {
-	this.driver =driver;
-	
-}
-	By Item_xpath = By.xpath("/html/body/app-root/div/app-overview/div[3]/div[2]/div[1]/a[3]/div[2]/h5");
-	By ClickAddToFav_xpath = By.xpath("//button[@data-test ='add-to-favorites']");
+		this.driver = driver;
+
+	}
+
+	By BoltCutters_xpath = By.xpath("/html/body/app-root/div/app-overview/div[3]/div[2]/div[1]/a[3]/div[2]/h5");
+	By AddToFav_xpath = By.xpath("//button[@data-test ='add-to-favorites']");
 	By ErrMessage = By.id("toast-container");
-	
-	public void ClickOnItem() {
-		driver.findElement(Item_xpath).click();
+
+	public void ClickOnBoltCutters() {
+		driver.findElement(BoltCutters_xpath).click();
 		ReportUtils.getLog().info("Item Selected sucessfully");
 	}
-	
-	
-	public void AddToFavourites() {
-		driver.findElement(ClickAddToFav_xpath).click();
+
+	public void ClickAddToFavourites() {
+		driver.findElement(AddToFav_xpath).click();
 		ReportUtils.getLog().info("Clicked on Favorites");
 	}
-	public String ValidateErrMessage() {
+
+	public String GetErrMessage() {
 		String error = driver.findElement(ErrMessage).getText();
-		ReportUtils.getLog().info("Error message is " +error);
+		ReportUtils.getLog().info("Error message is " + error);
 		return error;
 	}
 }
-
-
