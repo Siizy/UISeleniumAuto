@@ -3,6 +3,8 @@ package pageclasses;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import utils.ReportUtils;
+
 public class HomePage {
 	
 	WebDriver driver;
@@ -15,6 +17,7 @@ public class HomePage {
 	
 	public void clickOnCombinationPliers() {
 		driver.findElement(selectCombinationPliers).click();
+		ReportUtils.getLog().info("Combination Pliers clicked successfully");
 	}
 
 	
