@@ -3,6 +3,8 @@ package pageclasses;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import utils.ReportUtils;
+
 public class HomePageSearch {
 
 	WebDriver driver;
@@ -16,9 +18,10 @@ public class HomePageSearch {
 	By clickButton = By.xpath("//*[@id='filters']/form[2]/div/button[2]");
 	By productResult = By.xpath("//h3/span[text()='Combination Pliers']");
 
-	public void enterProductName() {
-		driver.findElement(searchText).sendKeys("Combination Pliers");
+	public void enterProductName(String productName) {
+		driver.findElement(searchText).sendKeys(productName);
 		driver.findElement(clickButton).click();
+		ReportUtils.getLog().info("Produt Name is:" + productName);
 	}
 
 	public String productNameResult() {

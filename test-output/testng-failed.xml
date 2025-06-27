@@ -8,6 +8,7 @@
           <include name="searchProduct"/>
           <include name="init"/>
           <include name="endTest"/>
+          <include name="tearDown"/>
           <include name="initBrowserDriver"/>
         </methods>
       </class> <!-- testcases.HomeSearchTest -->

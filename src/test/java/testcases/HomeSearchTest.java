@@ -12,7 +12,7 @@ public class HomeSearchTest extends BaseTest {
 		
 		
 		HomePageSearch search = new HomePageSearch(driver);
-		search.enterProductName();
+		search.enterProductName("Combination Pliers");
 		
 		Assert.assertEquals(search.productNameResult(), "Combination Pliers");
 		
