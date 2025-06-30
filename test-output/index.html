@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.AddToFavourites" class="method navigator-link" hash-for-method="selectItem">selectItem</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.HomePageTest" class="method navigator-link" hash-for-method="sortedList">sortedList</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.AddToFavourites</span>
+              <span class="class-name">testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectItem">
-                  </a> <!-- selectItem -->
-                  <span class="method-name">selectItem</span>
+                  <a name="sortedList">
+                  </a> <!-- sortedList -->
+                  <span class="method-name">sortedList</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/0p/fw4s_4d14d924ggl7hb_xst00000gn/T/testng-eclipse-6154256/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/0p/fw4s_4d14d924ggl7hb_xst00000gn/T/testng-eclipse--843063522/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.AddToFavourites&quot;/&gt;
+      &lt;class name=&quot;testcases.HomePageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;sortedList&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.HomePageTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -187,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'selectItem')
-data.setCell(0, 2, 'testcases.AddToFavourites')
-data.setCell(0, 3, 2254);
+data.setCell(0, 1, 'sortedList')
+data.setCell(0, 2, 'testcases.HomePageTest')
+data.setCell(0, 3, 252);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 252 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,26 +224,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.AddToFavourites</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">initBrowserDriver(public void testcases.AddToFavourites.selectItem())</span>
-                <span class="method-start">353 ms</span>
+                <span class="method-name">initBrowserDriver(public void testcases.HomePageTest.sortedList())</span>
+                <span class="method-start">208 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">selectItem</span>
-                <span class="method-start">7163 ms</span>
+                <span class="method-name">sortedList</span>
+                <span class="method-start">4485 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">endTest([TestResult name=selectItem status=SUCCESS method=AddToFavourites.selectItem()[pri:0, instance:testc...)</span>
-                <span class="method-start">9420 ms</span>
+                <span class="method-name">endTest([TestResult name=sortedList status=SUCCESS method=HomePageTest.sortedList()[pri:0, instance:testcase...)</span>
+                <span class="method-start">4740 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9577 ms</span>
+                <span class="method-start">4895 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

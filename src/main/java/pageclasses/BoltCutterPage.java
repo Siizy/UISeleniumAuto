@@ -17,17 +17,17 @@ public class BoltCutterPage {
 	By AddToFav_xpath = By.xpath("//button[@data-test ='add-to-favorites']");
 	By ErrMessage = By.id("toast-container");
 
-	public void ClickOnBoltCutters() {
+	public void clickOnBoltCutters() {
 		driver.findElement(BoltCutters_xpath).click();
 		ReportUtils.getLog().info("Item Selected sucessfully");
 	}
 
-	public void ClickAddToFavourites() {
+	public void clickAddToFavourites() {
 		driver.findElement(AddToFav_xpath).click();
 		ReportUtils.getLog().info("Clicked on Favorites");
 	}
 
-	public String GetErrMessage() {
+	public String getErrMessage() {
 		String error = driver.findElement(ErrMessage).getText();
 		ReportUtils.getLog().info("Error message is " + error);
 		return error;
