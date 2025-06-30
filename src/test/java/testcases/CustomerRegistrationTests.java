@@ -28,7 +28,23 @@ public class CustomerRegistrationTests extends BaseTest{
 		crpage.enterLastName(new Faker().name().lastName());
 		
 		Assert.assertEquals(crpage.getCustomerRegisterHeading(), "Customer registration");		
-		ReportUtils.getLog().pass("Test Passed");
+	}
+	
+	
+	@Test 
+	public void newCustomerRegTest2() {
+				
+		CommonMenuPageLinks comlinks = new CommonMenuPageLinks(driver);
+		comlinks.clickSignIn();
+		
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.clickOnRegisterYourAccountLink();
+		
+		CustomerRegistrationPage crpage = new CustomerRegistrationPage(driver);
+		crpage.enterFirstName(new Faker().name().firstName());
+		crpage.enterLastName(new Faker().name().lastName());
+		
+		Assert.assertEquals(crpage.getCustomerRegisterHeading(), "Customer registration");				
 	}
 	
 	

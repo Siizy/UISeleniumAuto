@@ -5,31 +5,28 @@ import org.openqa.selenium.WebDriver;
 
 import utils.ReportUtils;
 
-public class CustomerRegistrationPage {
+public class CustomerRegistrationPage extends PageActions{
 
-	WebDriver driver;
-
-	public CustomerRegistrationPage(WebDriver driver) {
-		this.driver = driver;
+	public CustomerRegistrationPage(WebDriver driver) {		
+		super(driver);		
 	}
 	
 	By firstNameId = By.id("first_name");	
 	By lastNameId = By.id("last_name");
 	By customerRegistrationHeadingtagName = By.tagName("h3");
 	
-	public void enterFirstName(String firstName) {
-		driver.findElement(firstNameId).sendKeys(firstName);
-		ReportUtils.getLog().info("First Name set as " + firstName);
+	public void enterFirstName(String firstName) {		
+		type(firstNameId, firstName, "First Name");		
 	}
 		
-	public void enterLastName(String lastName) {
-		driver.findElement(lastNameId).sendKeys(lastName);
-		ReportUtils.getLog().info("Last Name set as **********");
+	public void enterLastName(String lastName) {	
+		type(lastNameId, lastName, "Last Name");
+		
 	}
 	
-	public String getCustomerRegisterHeading() {
-		String heading = driver.findElement(customerRegistrationHeadingtagName).getText();
-		ReportUtils.getLog().info("Registration Heading is " + heading);
+	public String getCustomerRegisterHeading() {	
+		String heading = getText(customerRegistrationHeadingtagName, "Heading");
+		
 		return heading;
 	}
 
