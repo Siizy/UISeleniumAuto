@@ -15,7 +15,7 @@ public class BaseUtils {
 
 	// read data from config file
 
-	public static String getConfigValue(String key) throws IOException {
+	public static String getConfigValue(String key) throws IOException  {
 
 		Properties property = new Properties();
 		FileInputStream file = new FileInputStream(
