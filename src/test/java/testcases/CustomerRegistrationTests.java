@@ -28,7 +28,6 @@ public class CustomerRegistrationTests extends BaseTest{
 		crpage.enterLastName(new Faker().name().lastName());
 		
 		Assert.assertEquals(crpage.getCustomerRegisterHeading(), "Customer registration");		
-		ReportUtils.getLog().pass("Test Passed");
 	}
 	
 	
@@ -45,8 +44,7 @@ public class CustomerRegistrationTests extends BaseTest{
 		crpage.enterFirstName(new Faker().name().firstName());
 		crpage.enterLastName(new Faker().name().lastName());
 		
-		Assert.assertEquals(crpage.getCustomerRegisterHeading(), "Customer registration");		
-		ReportUtils.getLog().pass("Test Passed");
+		Assert.assertEquals(crpage.getCustomerRegisterHeading(), "Customer registration");				
 	}
 	
 	

@@ -18,81 +18,79 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 
 import org.testng.annotations.AfterSuite;
 
-
 import utils.BaseUtils;
 import utils.ReportUtils;
 
 public class BaseTest {
 
-// Design principle
-	// 1. DRY
-	// 2. SOLID Principle
-	// S - Single Responsibility
-	// O - Open close principle - open to extension and close to modify
-	
-	WebDriver driver ;
-	
+	WebDriver driver;
+
 	@BeforeSuite
 	protected void init() throws IOException {
 		ReportUtils.initReport();
 	}
-	
+
 	@BeforeMethod
 	public void initBrowserDriver(Method method) throws IOException {
 
-		ReportUtils.createTest(method.getName());	
+		ReportUtils.createTest(method.getName());
 		String browser = BaseUtils.getConfigValue("browser");
-						
-		switch (browser.toLowerCase()) { 
+
+		switch (browser.toLowerCase()) {
 		case "chrome":
-			driver = new ChromeDriver();			
+			driver = new ChromeDriver();
 			break;
-			
+
 		case "firefox":
 			driver = new FirefoxDriver();
-			
+
 			break;
-			
+
 		case "edge":
 			driver = new EdgeDriver();
-			
+
 			break;
-			
+
 		case "safari":
-			driver = new SafariDriver();		
+			driver = new SafariDriver();
 			break;
-									
+
 		default:
 			System.out.println("Browser not supported");
 			break;
 		}
-			
-		ReportUtils.getLog().info(browser+ " was successfully launched !!");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.valueOf(BaseUtils.getConfigValue("implicitwait"))));
+
+		ReportUtils.getLog().info(browser + " was successfully launched !!");
+		driver.manage().timeouts()
+				.implicitlyWait(Duration.ofSeconds(Integer.valueOf(BaseUtils.getConfigValue("implicitwait"))));
 		driver.manage().window().maximize();
 		ReportUtils.getLog().info("Window is maximised");
 		driver.navigate().to(BaseUtils.getConfigValue("url"));
 		ReportUtils.getLog().info("Url launched : " + BaseUtils.getConfigValue("url"));
 	}
-	
+
 	@AfterMethod
 	public void endTest(ITestResult result) throws IOException {
-		
+
 		if (result.getStatus() == ITestResult.FAILURE) {
 			ReportUtils.getLog().fail(result.getThrowable(),
 					MediaEntityBuilder.createScreenCaptureFromPath(BaseUtils.getScreenShotPath(driver,
 							result.getInstance().getClass().getSimpleName() + "." + result.getMethod().getMethodName()))
 							.build());
+
+		} else if (result.getStatus() == ITestResult.SUCCESS) {
+			ReportUtils.getLog().pass("Test passed");
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			ReportUtils.getLog().skip("Test skipped");
 		}
-		
+
 		driver.quit();
 		ReportUtils.getLog().info("Browser closed");
 	}
-	
+
 	@AfterSuite
 	protected void tearDown() {
-		ReportUtils.generateReport();		
+		ReportUtils.generateReport();
 	}
-	
 
 }
