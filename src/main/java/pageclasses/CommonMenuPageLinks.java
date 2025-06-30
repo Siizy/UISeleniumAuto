@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import utils.BaseUtils;
 import utils.ReportUtils;
 
-public class CommonMenuPageLinks extends PageActions{
+public class CommonMenuPageLinks extends BasePage{
 			
 	public CommonMenuPageLinks(WebDriver driver) {
 		super(driver);
@@ -16,7 +16,7 @@ public class CommonMenuPageLinks extends PageActions{
 	By SignIn_xpath=  By.xpath("//a[text()='Sign in']");
 	
 	public void clickSignIn() {				
-		click(SignIn_xpath, "Sign in button");
+		pageActions.click(SignIn_xpath, "Sign in button");
 				
 	}
 	

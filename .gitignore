@@ -1,2 +1,42 @@
+# ====================
+# Java / Maven Project
+# ====================
+target/                     # Maven build directory
+*.class                     # Java compiled files
+
+# ====================
+# Eclipse Specific
+# ====================
+.project
+.classpath
+.settings/
+*.launch
+
+# ====================
+# IntelliJ Specific (if ever opened there)
+# ====================
+.idea/
+*.iml
+*.iws
+out/
+
+# ====================
+# Logs / Reports
+# ====================
+*.log                       # Log files
+/test-output/              # TestNG default output folder
+/extent-reports/           # If extent reports are stored here
+
+# ====================
+# OS Specific
+# ====================
+.DS_Store                  # macOS
+Thumbs.db                  # Windows
+
+# ====================
+# Other tools or temp files
+# ====================
+*.tmp
+*.swp
+*.bak
 /target/
-/target-output/
