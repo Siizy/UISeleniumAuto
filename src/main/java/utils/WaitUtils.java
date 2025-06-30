@@ -1,6 +1,7 @@
 package utils;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -44,5 +45,9 @@ public class WaitUtils {
 
     public void waitForElementTextToBe(By locator, String text) {
         wait.until(ExpectedConditions.textToBe(locator, text));
+    }
+    
+    public List<WebElement> waitForElementsVisible(By locator) {
+        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
     }
 }

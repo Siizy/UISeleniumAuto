@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import utils.ReportUtils;
 
-public class CustomerRegistrationPage extends PageActions{
+public class CustomerRegistrationPage extends BasePage{
 
 	public CustomerRegistrationPage(WebDriver driver) {		
 		super(driver);		
@@ -16,16 +16,16 @@ public class CustomerRegistrationPage extends PageActions{
 	By customerRegistrationHeadingtagName = By.tagName("h3");
 	
 	public void enterFirstName(String firstName) {		
-		type(firstNameId, firstName, "First Name");		
+		pageActions.type(firstNameId, firstName, "First Name");		
 	}
 		
 	public void enterLastName(String lastName) {	
-		type(lastNameId, lastName, "Last Name");
+		pageActions.type(lastNameId, lastName, "Last Name");
 		
 	}
 	
 	public String getCustomerRegisterHeading() {	
-		String heading = getText(customerRegistrationHeadingtagName, "Heading");
+		String heading = pageActions.getText(customerRegistrationHeadingtagName, "Heading");
 		
 		return heading;
 	}
