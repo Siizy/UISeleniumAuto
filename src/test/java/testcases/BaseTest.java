@@ -60,9 +60,7 @@ public class BaseTest {
 			break;
 		}
 
-		ReportUtils.getLog().info(browser + " was successfully launched !!");
-		driver.manage().timeouts()
-				.implicitlyWait(Duration.ofSeconds(Integer.valueOf(BaseUtils.getConfigValue("implicitwait"))));
+		ReportUtils.getLog().info(browser + " was successfully launched !!");		
 		driver.manage().window().maximize();
 		ReportUtils.getLog().info("Window is maximised");
 		driver.navigate().to(BaseUtils.getConfigValue("url"));
