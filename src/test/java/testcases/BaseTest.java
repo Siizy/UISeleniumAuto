@@ -2,8 +2,6 @@ package testcases;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;

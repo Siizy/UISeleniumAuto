@@ -3,9 +3,6 @@ package pageclasses;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import utils.BaseUtils;
-import utils.ReportUtils;
-
 public class CommonMenuPageLinks extends BasePage{
 			
 	public CommonMenuPageLinks(WebDriver driver) {
@@ -13,7 +10,7 @@ public class CommonMenuPageLinks extends BasePage{
 	}
 	
 	
-	By SignIn_xpath=  By.xpath("//a[text()='Sign in']");
+	private By SignIn_xpath=  By.xpath("//a[text()='Sign in']");
 	
 	public void clickSignIn() {				
 		pageActions.click(SignIn_xpath, "Sign in button");

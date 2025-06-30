@@ -2,7 +2,6 @@ package utils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import org.apache.commons.io.FileUtils;
@@ -13,7 +12,9 @@ import org.openqa.selenium.WebDriver;
 
 public class BaseUtils {
 
-	// read data from config file
+	private BaseUtils(){
+		
+	}
 
 	public static String getConfigValue(String key) throws IOException  {
 

@@ -3,8 +3,6 @@ package pageclasses;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import utils.ReportUtils;
-
 public class CustomerRegistrationPage extends BasePage{
 
 	public CustomerRegistrationPage(WebDriver driver) {		
@@ -25,9 +23,7 @@ public class CustomerRegistrationPage extends BasePage{
 	}
 	
 	public String getCustomerRegisterHeading() {	
-		String heading = pageActions.getText(customerRegistrationHeadingtagName, "Heading");
-		
-		return heading;
+		return pageActions.getText(customerRegistrationHeadingtagName, "Heading");		
 	}
 
 }
