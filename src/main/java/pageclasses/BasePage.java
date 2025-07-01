@@ -8,11 +8,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import utils.PageActions;
 import utils.ReportUtils;
 
 public class BasePage {
 	WebDriver driver;
-
+    PageActions elementActions;
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -21,8 +23,9 @@ public class BasePage {
 	By SortDropdown_xpath = By.xpath("//select[@data-test ='sort']");
 
 	public void selectHammerCategory() {
-		driver.findElement(HammerCategory_xpath).click();
-		ReportUtils.getLog().info("Category Hammer Selected");
+		//driver.findElement(HammerCategory_xpath).click();
+		//ReportUtils.getLog().info("Category Hammer Selected");
+		elementActions.click(HammerCategory_xpath, "Hammer");
 	}
 
 	public void sortDropDown() {

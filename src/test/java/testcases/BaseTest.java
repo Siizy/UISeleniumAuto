@@ -84,6 +84,9 @@ public class BaseTest {
 							result.getInstance().getClass().getSimpleName() + "." + result.getMethod().getMethodName()))
 							.build());
 		}
+		else {
+			ReportUtils.getLog().pass("Test Passed");
+		}
 		
 		driver.quit();
 		ReportUtils.getLog().info("Browser closed");
