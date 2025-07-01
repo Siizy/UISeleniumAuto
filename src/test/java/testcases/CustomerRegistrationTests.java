@@ -8,7 +8,6 @@ import com.github.javafaker.Faker;
 import pageclasses.CommonMenuPageLinks;
 import pageclasses.CustomerRegistrationPage;
 import pageclasses.LoginPage;
-import utils.ReportUtils;
 
 public class CustomerRegistrationTests extends BaseTest{
 		
@@ -27,7 +26,7 @@ public class CustomerRegistrationTests extends BaseTest{
 		crpage.enterLastName(new Faker().name().lastName());
 		
 		Assert.assertEquals(crpage.getCustomerRegisterHeading(), "Customer registration");		
-		ReportUtils.getLog().pass("Test Passed");
+		
 	}
 	
 	
@@ -45,7 +44,6 @@ public class CustomerRegistrationTests extends BaseTest{
 		crpage.enterLastName(new Faker().name().lastName());
 		
 		Assert.assertEquals(crpage.getCustomerRegisterHeading(), "Customer registration");		
-		ReportUtils.getLog().pass("Test Passed");
 	}
 	
 	

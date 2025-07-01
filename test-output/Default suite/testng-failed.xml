@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.HomePageTest">
+      <class name="testcases.AddToFavouritesTest">
         <methods>
           <include name="init"/>
           <include name="endTest"/>
           <include name="tearDown"/>
           <include name="initBrowserDriver"/>
-          <include name="sortedList"/>
+          <include name="selectItem"/>
         </methods>
-      </class> <!-- testcases.HomePageTest -->
+      </class> <!-- testcases.AddToFavouritesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

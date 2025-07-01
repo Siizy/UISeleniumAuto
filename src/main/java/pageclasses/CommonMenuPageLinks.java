@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import utils.BaseUtils;
 import utils.ReportUtils;
 
-public class CommonMenuPageLinks extends BasePage{
+public class CommonMenuPageLinks{
 	
 	WebDriver driver;
 	

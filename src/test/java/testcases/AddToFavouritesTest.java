@@ -13,7 +13,6 @@ public class AddToFavouritesTest extends BaseTest {
 		bcp.clickOnBoltCutters();
 		bcp.clickAddToFavourites();
 		Assert.assertEquals(bcp.getErrMessage(), "Unauthorized, can not add product to your favorite list.");
-		ReportUtils.getLog().pass("Test Passed");
 
 	}
 

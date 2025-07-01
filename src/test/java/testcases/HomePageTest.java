@@ -4,10 +4,10 @@ import org.testng.annotations.Test;
 
 import pageclasses.BasePage;
 
-public class HomePageTest extends BaseTest{
+public class HomePageTest extends BaseTest {
 	@Test
 	public void sortedList() {
-		BasePage bp =new BasePage(driver);
+		BasePage bp = new BasePage(driver);
 		bp.selectHammerCategory();
 		bp.sortDropDown();
 	}

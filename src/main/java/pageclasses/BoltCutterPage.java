@@ -8,11 +8,11 @@ import utils.ReportUtils;
 
 public class BoltCutterPage {
 	WebDriver driver;
- PageActions elementActions;
+	PageActions elementActions;
+
 	public BoltCutterPage(WebDriver driver) {
 		this.driver = driver;
 		elementActions = new PageActions(driver);
-		
 
 	}
 
@@ -21,21 +21,21 @@ public class BoltCutterPage {
 	By ErrMessage = By.id("toast-container");
 
 	public void clickOnBoltCutters() {
-		//driver.findElement(BoltCutters_xpath).click();
-		//ReportUtils.getLog().info("Item Selected sucessfully");
+		// driver.findElement(BoltCutters_xpath).click();
+		// ReportUtils.getLog().info("Item Selected sucessfully");
 		elementActions.click(BoltCutters_xpath, "Bolt Cutters");
 	}
 
 	public void clickAddToFavourites() {
-		//driver.findElement(AddToFav_xpath).click();
-		//ReportUtils.getLog().info("Clicked on Favorites");
+		// driver.findElement(AddToFav_xpath).click();
+		// ReportUtils.getLog().info("Clicked on Favorites");
 		elementActions.click(AddToFav_xpath, "Add to Favorites");
 	}
 
 	public String getErrMessage() {
-		//String error = driver.findElement(ErrMessage).getText();
-		//ReportUtils.getLog().info("Error message is " + error);
-		String error = elementActions.getText(ErrMessage, "Unauthorized, can not add product to your favorite list.");
+		// String error = driver.findElement(ErrMessage).getText();
+		// ReportUtils.getLog().info("Error message is " + error);
+		String error = elementActions.getText(ErrMessage, "Error");
 		return error;
 	}
 }
