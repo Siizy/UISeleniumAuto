@@ -11,5 +11,4 @@ public class HomePageTest extends BaseTest {
 		bp.selectHammerCategory();
 		bp.sortDropDown();
 	}
-
 }

@@ -55,5 +55,4 @@ public class BasePage {
 		}
 		ReportUtils.getLog().info("Sorted list validated");
 	}
-
 }
