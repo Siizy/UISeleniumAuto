@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-24T09:16:21 MDT" name="Default suite" finished-at="2025-06-24T09:16:26 MDT" duration-ms="4953">
+  <suite started-at="2025-06-26T20:58:44 EDT" name="Default suite" finished-at="2025-06-26T20:59:40 EDT" duration-ms="55313">
     <groups>
     </groups>
-    <test started-at="2025-06-24T09:16:21 MDT" name="Default test" finished-at="2025-06-24T09:16:26 MDT" duration-ms="4953">
-      <class name="testcases.ContactPageTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:testcases.ContactPageTest@7b98f307]" started-at="2025-06-24T09:16:21 MDT" name="init" finished-at="2025-06-24T09:16:21 MDT" duration-ms="226" status="PASS">
+    <test started-at="2025-06-26T20:58:44 EDT" name="Default test" finished-at="2025-06-26T20:59:40 EDT" duration-ms="55313">
+      <class name="testcases.HomeSearchTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.HomeSearchTest@515c6049]" started-at="2025-06-26T20:58:44 EDT" name="init" finished-at="2025-06-26T20:58:44 EDT" duration-ms="328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="initBrowserDriver(java.lang.reflect.Method)[pri:0, instance:testcases.ContactPageTest@7b98f307]" started-at="2025-06-24T09:16:21 MDT" name="initBrowserDriver" finished-at="2025-06-24T09:16:23 MDT" duration-ms="2536" status="PASS">
+        <test-method is-config="true" signature="initBrowserDriver(java.lang.reflect.Method)[pri:0, instance:testcases.HomeSearchTest@515c6049]" started-at="2025-06-26T20:58:44 EDT" name="initBrowserDriver" finished-at="2025-06-26T20:59:38 EDT" duration-ms="53581" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testcases.ContactPageTest.contactFormSubmissionTest()]]>
+                <![CDATA[public void testcases.HomeSearchTest.searchProduct()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowserDriver -->
-        <test-method signature="contactFormSubmissionTest()[pri:0, instance:testcases.ContactPageTest@7b98f307]" started-at="2025-06-24T09:16:23 MDT" name="contactFormSubmissionTest" finished-at="2025-06-24T09:16:26 MDT" duration-ms="2196" status="PASS">
+        <test-method signature="searchProduct()[pri:0, instance:testcases.HomeSearchTest@515c6049]" started-at="2025-06-26T20:59:38 EDT" name="searchProduct" finished-at="2025-06-26T20:59:39 EDT" duration-ms="601" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contactFormSubmissionTest -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:testcases.ContactPageTest@7b98f307]" started-at="2025-06-24T09:16:26 MDT" name="endTest" finished-at="2025-06-24T09:16:26 MDT" duration-ms="200" status="PASS">
+        </test-method> <!-- searchProduct -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:testcases.HomeSearchTest@515c6049]" started-at="2025-06-26T20:59:39 EDT" name="endTest" finished-at="2025-06-26T20:59:40 EDT" duration-ms="1095" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=contactFormSubmissionTest status=SUCCESS method=ContactPageTest.contactFormSubmissionTest()[pri:0, instance:testcases.ContactPageTest@7b98f307] output={null}]]]>
+                <![CDATA[[TestResult name=searchProduct status=SUCCESS method=HomeSearchTest.searchProduct()[pri:0, instance:testcases.HomeSearchTest@515c6049] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ContactPageTest@7b98f307]" started-at="2025-06-24T09:16:26 MDT" name="tearDown" finished-at="2025-06-24T09:16:26 MDT" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HomeSearchTest@515c6049]" started-at="2025-06-26T20:59:40 EDT" name="tearDown" finished-at="2025-06-26T20:59:41 EDT" duration-ms="735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.ContactPageTest -->
+      </class> <!-- testcases.HomeSearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
